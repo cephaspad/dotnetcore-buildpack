@@ -51,9 +51,9 @@ fi
 echo "publish ${PROJECT_FILE}"
 dotnet publish $PROJECT_FILE --output ${BUILD_DIR}/heroku_output --configuration Release --runtime linux-x64
 
-if [ -a "${BUILD_DIR}/Procfile"; ] then
-echo "Procfile does not exist. Generating ... ";
-cat << EOT >> ${BUILD_DIR}/Procfile
-web: cd \$HOME/heroku_output && ASPNETCORE_URLS='http://+:\$PORT' dotnet "./${PROJECT_NAME}.dll"
-EOT
-fi
+# if [ -a "${BUILD_DIR}/Procfile"; ]; then
+# echo "Procfile does not exist. Generating ... ";
+# cat << EOT >> ${BUILD_DIR}/Procfile
+# 	web: cd \$HOME/heroku_output && ASPNETCORE_URLS='http://+:\$PORT' dotnet "./${PROJECT_NAME}.dll"
+# EOT
+# fi
