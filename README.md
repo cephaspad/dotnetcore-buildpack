@@ -8,19 +8,19 @@ This is the [Heroku buildpack](https://devcenter.heroku.com/articles/buildpacks)
 For Heroku-16 stack and .NET Core 2.0.0
 
 ```
-heroku buildpacks:set https://github.com/jincod/dotnetcore-buildpack
+heroku buildpacks:set https://github.com/cephaspad/dotnetcore-buildpack
 ```
 
 For Heroku-16 stack and .NET Core 1.0.4 (LTS)
 
 ```
-heroku buildpacks:set https://github.com/jincod/dotnetcore-buildpack#v1.0.4
+heroku buildpacks:set https://github.com/cephaspad/dotnetcore-buildpack#v1.0.4
 ```
 
 For Cedar-14 stack **(Deprecated)**
 
 ```
-heroku buildpacks:set https://github.com/jincod/dotnetcore-buildpack.git#cedar-14
+heroku buildpacks:set https://github.com/cephaspad/dotnetcore-buildpack.git#cedar-14
 ```
 
 More info
@@ -31,7 +31,7 @@ More info
 ## Node.js and NPM
 
 ```bash
-heroku buildpacks:set https://github.com/jincod/dotnetcore-buildpack
+heroku buildpacks:set https://github.com/cephaspad/dotnetcore-buildpack
 heroku buildpacks:add --index 1 heroku/nodejs
 ```
 
